@@ -4,10 +4,10 @@ class ShortenerController {
     async store(req, res) {
         const { long_url } = req.body;
 
-        const url = CreateShortenerService.shortener();
+        const newUrl = CreateShortenerService.shortener();
 
         return res.json({
-            newUrl: `${long_url}/${url}`
+            newUrl: newUrl
         })
     }
 }
