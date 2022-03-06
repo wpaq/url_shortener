@@ -11,6 +11,10 @@ class AppController {
 
     middlewares() {
         this.express.use(express.json());
+        this.express.use(express.urlencoded({ extended: true }));
+
+        this.express.set('view engine', 'ejs');
+        this.express.set('views', './src/views');
     }
 
     routes() {
