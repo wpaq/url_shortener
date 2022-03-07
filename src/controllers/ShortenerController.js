@@ -12,7 +12,7 @@ class ShortenerController {
         
         await Shortener.create({ baseUrl: req.body.baseUrl, newUrl: url_random});
 
-        return res.redirect('/', { newUrl })
+        return res.redirect('/')
     }
 
     async find(req, res) {
