@@ -10,5 +10,3 @@
 - Sistema que cria e armazena em um banco de dados uma url encurtada.
 - Ao tentar acessar a url encurtada redireciona para a url original
 <br>
-
-## Em desenvolvimento!
